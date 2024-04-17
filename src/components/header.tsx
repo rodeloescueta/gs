@@ -59,13 +59,15 @@ export default function Header() {
         </div>
         <div className="mr-[82px] flex w-[16%] justify-between gap-5 md:mr-0 md:w-full">
           <div className="flex-1 py-[5px]">
-            <Button
-              color="blue_400"
-              size="md"
-              className="w-full rounded-[25px] font-medium capitalize tracking-[-0.28px] sm:px-5"
-            >
-              Seo check
-            </Button>
+            <Link href="#dashboard">
+              <Button
+                color="blue_400"
+                size="md"
+                className="w-full rounded-[25px] font-medium capitalize tracking-[-0.28px] sm:px-5"
+              >
+                Seo check
+              </Button>
+            </Link>
           </div>
           <div className="flex py-[5px]">
             <ul className="flex">

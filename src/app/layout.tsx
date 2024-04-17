@@ -3,6 +3,8 @@ import "@/styles/tailwind.css";
 import "../styles/index.css";
 import "../styles/font.css";
 import Header from "../components/header";
+import Dashboard from "../components/dashboard";
+import Services from "../components/services";
 
 function RootLayout({ children }: { children: ReactNode }) {
   return (
@@ -16,6 +18,8 @@ function RootLayout({ children }: { children: ReactNode }) {
       </head>
       <body>
         <Header />
+        <Dashboard />
+        <Services />
         {children}
       </body>
     </html>
