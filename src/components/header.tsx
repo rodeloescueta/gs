@@ -1,9 +1,22 @@
 "use client";
-import { Text, Heading, Img, Button } from "../components";
+import { useParams } from "next/navigation";
+import { useEffect, useState } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { links } from "../lib/data";
+import { motion } from "framer-motion";
+// components
+import { Text, Heading, Img, Button } from "../components";
 
 export default function Header() {
+  const params = useParams();
+  const [hash, setHash] = useState("#home");
+
+  useEffect(() => {
+    const currentHash = window.location.hash;
+    setHash(currentHash);
+  }, [params]);
+
   return (
     <header className="bg-gray-900_01">
       <div className="flex items-center justify-between gap-5 border border-solid border-blue-100_7f bg-white-A700 p-[13px] md:flex-col">
@@ -17,18 +30,28 @@ export default function Header() {
         <div className="flex self-end p-[29px] sm:p-5">
           <ul className="flex self-start">
             {links.map((link) => {
+              const isActive = link.hash === hash;
               return (
                 <li key={link.name}>
-                  <div className="flex self-end p-[11px]">
+                  <motion.div
+                    className={`flex self-end px-[11px] rounded-full ${
+                      isActive && "bg-blue-400"
+                    }`}
+                    whileHover={{
+                      scale: 1.2,
+                    }}
+                  >
                     <Link href={link.hash} className="mb-[21px] mt-[18px]">
                       <Text
                         as="p"
-                        className="text-center capitalize tracking-[-0.30px]"
+                        className={`text-center capitalize tracking-[-0.30px] hover:text-blue-400 ${
+                          isActive && "!text-white-A700 font-semibold"
+                        }`}
                       >
                         {link.name}
                       </Text>
                     </Link>
-                  </div>
+                  </motion.div>
                 </li>
               );
             })}
