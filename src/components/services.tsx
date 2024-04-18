@@ -9,14 +9,6 @@ import { motion } from "framer-motion";
 import { Text, Heading, Img, Button } from "../components";
 
 export default function Header() {
-  const params = useParams();
-  const [hash, setHash] = useState("#home");
-
-  useEffect(() => {
-    const currentHash = window.location.hash;
-    setHash(currentHash);
-  }, [params]);
-
   return (
     <div className="flex flex-col items-center" id="services">
       <Text
@@ -54,13 +46,9 @@ export default function Header() {
                     </Text>
                   </div>
                   <div className="flex">
-                    <Text
-                      size="6xl"
-                      as="p"
-                      className="tracking-[-1.12px] !text-blue-400"
-                    >
+                    <p className="text-[28px] font-medium md:text-[26px] sm:text-2xl tracking-[-1.12px] text-blue-400 hover:text-white-A700">
                       Portfolio
-                    </Text>
+                    </p>
                   </div>
                 </div>
               </div>
@@ -86,13 +74,9 @@ export default function Header() {
                     begeleiden we je naar digitale groei.
                   </Text>
                   <div className="flex self-start">
-                    <Text
-                      size="6xl"
-                      as="p"
-                      className="tracking-[-1.12px] !text-blue-400"
-                    >
+                    <p className="text-[28px] font-medium md:text-[26px] sm:text-2xl tracking-[-1.12px] text-blue-400 hover:text-gray-900">
                       Over Grandsolution
-                    </Text>
+                    </p>
                   </div>
                 </div>
               </div>
@@ -107,16 +91,12 @@ export default function Header() {
               className="h-[526px] w-full rounded-[24px] object-cover"
             />
             <div className="absolute bottom-[10%] left-[10%] m-auto flex w-[54%]">
-              <Text
-                size="8xl"
-                as="p"
-                className="w-[61%] leading-[42px] tracking-[-1.56px] !text-white-A700"
-              >
+              <p className="text-[39px] font-medium md:text-[37px] sm:text-[35px] w-[61%] leading-[42px] tracking-[-1.56px] text-white-A700 hover:text-blue-400">
                 <>
                   Ontdek <br />
                   onze blogs
                 </>
-              </Text>
+              </p>
             </div>
           </div>
         </div>
