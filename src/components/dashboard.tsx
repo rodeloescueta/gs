@@ -51,18 +51,19 @@ export default function Dashboard() {
         <div className="absolute bottom-0 left-[0.00px] top-0 my-auto h-[965px] w-[40px] bg-white-A700" />
         <div className="absolute bottom-0 left-0 right-0 top-0 m-auto flex h-max w-full items-start justify-center md:relative md:flex-col">
           <div className="relative z-[1] mt-[209px] flex-1 py-[25px] pl-[25px] md:self-stretch md:p-5 sm:py-5 sm:pl-5">
-            <Text
-              size="13xl"
-              as="p"
-              className="mb-[46px] mt-11 text-center leading-[140px] tracking-[-0.30px] !text-blue-50"
-            >
+            <p className="text-[120px] font-normal md:text-5xl mt-11 text-center leading-[140px] tracking-[-0.30px] !text-blue-50">
               Grandsolution gives your business the digital boost it needs.
-            </Text>
+            </p>
           </div>
           <div className="relative ml-[-40px] h-[965px] w-[40px] bg-white-A700 md:ml-0 md:p-5" />
         </div>
-        <div className="absolute bottom-[22%] left-0 right-0 m-auto flex w-[12%] justify-center p-2">
-          <div className="flex w-full items-center justify-end gap-3.5 rounded-[25px] border border-solid border-blue-400 bg-blue-400_01 p-3.5">
+        <div className="absolute bottom-[22%] left-0 right-0 m-auto flex w-[12%] justify-center p-2  ">
+          <motion.div
+            whileHover={{
+              boxShadow: "0px 0px 8px rgb(255,255,255)",
+            }}
+            className={`flex w-full items-center justify-start hover:justify-between gap-3.5 rounded-[25px] border border-solid border-blue-400 bg-blue-400_01 p-3.5`}
+          >
             <Text
               size="s"
               as="p"
@@ -77,7 +78,7 @@ export default function Dashboard() {
               alt="close_one"
               className="h-[20px]"
             />
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>

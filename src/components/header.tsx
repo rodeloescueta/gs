@@ -2,7 +2,6 @@
 import { useParams } from "next/navigation";
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 import { links } from "../lib/data";
 import { motion } from "framer-motion";
 // components
@@ -38,7 +37,7 @@ export default function Header() {
                       isActive && "bg-blue-400"
                     }`}
                     whileHover={{
-                      scale: 1.2,
+                      scaleX: 1.1,
                     }}
                   >
                     <Link href={link.hash} className="mb-[21px] mt-[18px]">
