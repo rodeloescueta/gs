@@ -60,7 +60,7 @@ export default function Header() {
                   width={94}
                   height={95}
                   alt="image"
-                  className="h-[95px] w-[94px] rounded-[47px] object-cover sm:w-full"
+                  className="h-[95px] w-[94px] rounded-[50%]"
                 />
                 <div className="flex w-[71%] flex-col gap-3.5 sm:w-full">
                   <Text

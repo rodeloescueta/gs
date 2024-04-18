@@ -14,7 +14,7 @@ const data = [
 export default function FramePage() {
   return (
     <>
-      {/* main content section */}
+      {/* main content section **deleted first div** */}
       <div className="flex h-[5869px] w-full flex-col gap-[130px] bg-[url(/images/img_6721_frame.png)] bg-cover bg-no-repeat pb-5 md:h-auto md:gap-[97px] sm:gap-[65px]">
         {/* header navigation section */}
         <header className="border border-solid border-black-900 bg-gray-900_01">
@@ -31,7 +31,10 @@ export default function FramePage() {
                 <li>
                   <div className="flex self-end p-[11px]">
                     <Link href="#" className="mb-[21px] mt-[18px]">
-                      <Text as="p" className="text-center capitalize tracking-[-0.30px]">
+                      <Text
+                        as="p"
+                        className="text-center capitalize tracking-[-0.30px]"
+                      >
                         services
                       </Text>
                     </Link>
@@ -40,7 +43,10 @@ export default function FramePage() {
                 <li>
                   <div className="flex flex-col items-center justify-center self-end p-[11px]">
                     <Link href="#" className="my-5">
-                      <Text as="p" className="text-center capitalize tracking-[-0.30px]">
+                      <Text
+                        as="p"
+                        className="text-center capitalize tracking-[-0.30px]"
+                      >
                         aanpak
                       </Text>
                     </Link>
@@ -49,7 +55,10 @@ export default function FramePage() {
                 <li>
                   <div className="flex self-end p-[11px]">
                     <Link href="#" className="mb-[21px] mt-[18px]">
-                      <Text as="p" className="text-center capitalize tracking-[-0.30px]">
+                      <Text
+                        as="p"
+                        className="text-center capitalize tracking-[-0.30px]"
+                      >
                         Portfolio
                       </Text>
                     </Link>
@@ -58,7 +67,10 @@ export default function FramePage() {
                 <li>
                   <div className="flex flex-col items-center justify-center self-end p-[11px]">
                     <Link href="#" className="mb-[19px] mt-5">
-                      <Text as="p" className="text-center capitalize tracking-[-0.30px]">
+                      <Text
+                        as="p"
+                        className="text-center capitalize tracking-[-0.30px]"
+                      >
                         blog
                       </Text>
                     </Link>
@@ -67,7 +79,10 @@ export default function FramePage() {
                 <li>
                   <div className="flex self-end p-[11px]">
                     <Link href="#" className="mb-[21px] mt-[18px]">
-                      <Text as="p" className="text-center capitalize tracking-[-0.30px]">
+                      <Text
+                        as="p"
+                        className="text-center capitalize tracking-[-0.30px]"
+                      >
                         over ons
                       </Text>
                     </Link>
@@ -92,7 +107,11 @@ export default function FramePage() {
                       href="#"
                       className="flex h-[50px] items-center justify-center rounded-[25px] border border-solid border-blue-400 bg-blue-400_01 sm:px-5"
                     >
-                      <Text size="s" as="p" className="px-8 py-4 capitalize tracking-[-0.28px] !text-white-A700">
+                      <Text
+                        size="s"
+                        as="p"
+                        className="px-8 py-4 capitalize tracking-[-0.28px] !text-white-A700"
+                      >
                         Contact
                       </Text>
                     </Link>
@@ -103,7 +122,7 @@ export default function FramePage() {
           </div>
         </header>
 
-        {/* hero section */}
+        {/* hero section **current** */}
         <div className="flex flex-col items-center">
           <div className="mx-auto flex w-full max-w-[1827px] items-center justify-between gap-5 md:flex-col md:p-5">
             <Img
@@ -117,15 +136,24 @@ export default function FramePage() {
               <div className="h-full w-[2px] bg-black-900 sm:h-[2px] sm:w-full" />
               <div className="flex flex-1 flex-col gap-[13px] sm:self-stretch">
                 <div className="flex">
-                  <Text size="3xl" as="p" className="w-[75%] leading-[22px] !text-blue-400">
+                  <Text
+                    size="3xl"
+                    as="p"
+                    className="w-[75%] leading-[22px] !text-blue-400"
+                  >
                     Transformeer jouw visie naar digitale realiteit
                   </Text>
                 </div>
                 <div className="flex items-start gap-4 sm:flex-col">
-                  <Text size="xl" as="p" className="w-[93%] leading-[22px] !text-black-900 sm:w-full">
-                    Samen maken we van jouw visie een online realiteit. Onze expertise en creativiteit creëren een
-                    sterke digitale aanwezigheid die indruk maakt en groeit. Laat ons jouw digitale succesverhaal
-                    schrijven.
+                  <Text
+                    size="xl"
+                    as="p"
+                    className="w-[93%] leading-[22px] !text-black-900 sm:w-full"
+                  >
+                    Samen maken we van jouw visie een online realiteit. Onze
+                    expertise en creativiteit creëren een sterke digitale
+                    aanwezigheid die indruk maakt en groeit. Laat ons jouw
+                    digitale succesverhaal schrijven.
                   </Text>
                   <div className="mt-[18px] h-px w-px border-l border-solid border-gray-700_01 sm:mt-0" />
                 </div>
@@ -148,10 +176,20 @@ export default function FramePage() {
             </div>
             <div className="absolute bottom-[22%] left-0 right-0 m-auto flex w-[12%] justify-center p-2">
               <div className="flex w-full items-center justify-end gap-3.5 rounded-[25px] border border-solid border-blue-400 bg-blue-400_01 p-3.5">
-                <Text size="s" as="p" className="text-center capitalize tracking-[-0.28px] !text-white-A700">
+                <Text
+                  size="s"
+                  as="p"
+                  className="text-center capitalize tracking-[-0.28px] !text-white-A700"
+                >
                   Onze services
                 </Text>
-                <Img src="img_close.svg" width={22} height={20} alt="close_one" className="h-[20px]" />
+                <Img
+                  src="img_close.svg"
+                  width={22}
+                  height={20}
+                  alt="close_one"
+                  className="h-[20px]"
+                />
               </div>
             </div>
           </div>
@@ -160,8 +198,8 @@ export default function FramePage() {
             as="p"
             className="mt-[116px] w-[61%] leading-[73px] tracking-[-3.60px] !text-gray-900 md:w-full md:p-5"
           >
-            Wij trekken de aandacht, creëren verandering en vergroten impact. Wij dragen bij aan de groei van bedrijven
-            in de digitale wereld.
+            Wij trekken de aandacht, creëren verandering en vergroten impact.
+            Wij dragen bij aan de groei van bedrijven in de digitale wereld.
           </Text>
 
           {/* services overview section */}
@@ -179,13 +217,23 @@ export default function FramePage() {
                     />
                     <div className="mr-[7px] flex w-[71%] flex-col gap-[18px] sm:mr-0 sm:w-full">
                       <div className="flex">
-                        <Text size="2xl" as="p" className="w-[97%] leading-6 tracking-[-0.54px] !text-white-A700">
-                          Laat je verrassen door onze prestaties! Ontdek ons gevarieerde portfolio met gerealiseerde
-                          websites en laat je inspireren door het vakmanschap achter elk project.{" "}
+                        <Text
+                          size="2xl"
+                          as="p"
+                          className="w-[97%] leading-6 tracking-[-0.54px] !text-white-A700"
+                        >
+                          Laat je verrassen door onze prestaties! Ontdek ons
+                          gevarieerde portfolio met gerealiseerde websites en
+                          laat je inspireren door het vakmanschap achter elk
+                          project.{" "}
                         </Text>
                       </div>
                       <div className="flex">
-                        <Text size="6xl" as="p" className="tracking-[-1.12px] !text-blue-400">
+                        <Text
+                          size="6xl"
+                          as="p"
+                          className="tracking-[-1.12px] !text-blue-400"
+                        >
                           Portfolio
                         </Text>
                       </div>
@@ -202,13 +250,22 @@ export default function FramePage() {
                       className="h-[95px] w-[94px] rounded-[47px] object-cover sm:w-full"
                     />
                     <div className="flex w-[71%] flex-col gap-3.5 sm:w-full">
-                      <Text size="lg" as="p" className="leading-[22px] tracking-[-0.48px] !text-gray-900">
-                        Van het ontdekken van digitale kansen tot het ontwerpen van jouw website, webshop of app, en het
-                        stimuleren van je online aanwezigheid. Als full-service digital agency begeleiden we je naar
-                        digitale groei.
+                      <Text
+                        size="lg"
+                        as="p"
+                        className="leading-[22px] tracking-[-0.48px] !text-gray-900"
+                      >
+                        Van het ontdekken van digitale kansen tot het ontwerpen
+                        van jouw website, webshop of app, en het stimuleren van
+                        je online aanwezigheid. Als full-service digital agency
+                        begeleiden we je naar digitale groei.
                       </Text>
                       <div className="flex self-start">
-                        <Text size="6xl" as="p" className="tracking-[-1.12px] !text-blue-400">
+                        <Text
+                          size="6xl"
+                          as="p"
+                          className="tracking-[-1.12px] !text-blue-400"
+                        >
                           Over Grandsolution
                         </Text>
                       </div>
@@ -225,7 +282,11 @@ export default function FramePage() {
                   className="h-[526px] w-full rounded-[24px] object-cover"
                 />
                 <div className="absolute bottom-[10%] left-[10%] m-auto flex w-[54%]">
-                  <Text size="8xl" as="p" className="w-[61%] leading-[42px] tracking-[-1.56px] !text-white-A700">
+                  <Text
+                    size="8xl"
+                    as="p"
+                    className="w-[61%] leading-[42px] tracking-[-1.56px] !text-white-A700"
+                  >
                     <>
                       Ontdek <br />
                       onze blogs
@@ -236,13 +297,29 @@ export default function FramePage() {
             </div>
             <div className="flex items-start justify-between gap-5 pr-[19px]">
               <div className="mb-[39px] flex">
-                <Text size="13xl" as="p" className="!font-medium tracking-[-7.20px] !text-gray-900">
+                <Text
+                  size="13xl"
+                  as="p"
+                  className="!font-medium tracking-[-7.20px] !text-gray-900"
+                >
                   Onze
                 </Text>
               </div>
               <div className="flex gap-[9px]">
-                <Img src="img_6770_frame.svg" width={38} height={39} alt="image_two" className="h-[39px] w-[38px]" />
-                <Img src="img_6775_frame.svg" width={38} height={39} alt="image_three" className="h-[39px] w-[38px]" />
+                <Img
+                  src="img_6770_frame.svg"
+                  width={38}
+                  height={39}
+                  alt="image_two"
+                  className="h-[39px] w-[38px]"
+                />
+                <Img
+                  src="img_6775_frame.svg"
+                  width={38}
+                  height={39}
+                  alt="image_three"
+                  className="h-[39px] w-[38px]"
+                />
               </div>
             </div>
           </div>
@@ -263,15 +340,23 @@ export default function FramePage() {
                         />
                         <div className="mb-[156px] flex">
                           <div className="flex pt-3">
-                            <Text size="5xl" as="p" className="tracking-[-1.20px] !text-gray-900_03">
+                            <Text
+                              size="5xl"
+                              as="p"
+                              className="tracking-[-1.20px] !text-gray-900_03"
+                            >
                               Maatwerk websites
                             </Text>
                           </div>
                         </div>
                       </div>
                       <div className="absolute bottom-[18%] right-[0.00px] m-auto flex w-[89%] pt-4">
-                        <Text as="p" className="w-[81%] leading-[21px] tracking-[-0.30px] !text-blue_gray-400">
-                          Behaal online succes met een website die speciaal voor jouw is ontworpen.
+                        <Text
+                          as="p"
+                          className="w-[81%] leading-[21px] tracking-[-0.30px] !text-blue_gray-400"
+                        >
+                          Behaal online succes met een website die speciaal voor
+                          jouw is ontworpen.
                         </Text>
                       </div>
                     </div>
@@ -288,7 +373,11 @@ export default function FramePage() {
                           />
                           <div className="mb-[156px] flex">
                             <div className="flex pt-3.5">
-                              <Text size="5xl" as="p" className="tracking-[-0.30px] !text-gray-900_03">
+                              <Text
+                                size="5xl"
+                                as="p"
+                                className="tracking-[-0.30px] !text-gray-900_03"
+                              >
                                 Online marketing
                               </Text>
                             </div>
@@ -296,8 +385,12 @@ export default function FramePage() {
                         </div>
                         <div className="absolute bottom-[14%] right-[0.00px] m-auto flex w-[89%] pt-4">
                           <div className="flex w-[81%] justify-center pr-[18px] md:w-full">
-                            <Text as="p" className="leading-[21px] tracking-[-0.30px] !text-blue_gray-400">
-                              Vergroot je zichtbaarheid, stimuleer je groei en bereik meer klanten met online marketing.
+                            <Text
+                              as="p"
+                              className="leading-[21px] tracking-[-0.30px] !text-blue_gray-400"
+                            >
+                              Vergroot je zichtbaarheid, stimuleer je groei en
+                              bereik meer klanten met online marketing.
                             </Text>
                           </div>
                         </div>
@@ -315,15 +408,23 @@ export default function FramePage() {
                     <div className="mb-[79px] flex w-[88%] flex-col gap-[18px] md:w-full md:p-5">
                       <div className="flex">
                         <div className="flex pt-3">
-                          <Text size="5xl" as="p" className="tracking-[-0.30px] !text-gray-900_03">
+                          <Text
+                            size="5xl"
+                            as="p"
+                            className="tracking-[-0.30px] !text-gray-900_03"
+                          >
                             E-commerce
                           </Text>
                         </div>
                       </div>
                       <div className="pr-4 pt-4">
                         <div className="pr-[18px]">
-                          <Text as="p" className="leading-[21px] tracking-[-0.30px] !text-blue_gray-400">
-                            Verbeter je online verkoopresultaten met een op maat gemaakte webshop.
+                          <Text
+                            as="p"
+                            className="leading-[21px] tracking-[-0.30px] !text-blue_gray-400"
+                          >
+                            Verbeter je online verkoopresultaten met een op maat
+                            gemaakte webshop.
                           </Text>
                         </div>
                       </div>
@@ -333,11 +434,19 @@ export default function FramePage() {
                 <div className="flex justify-center rounded-[24px] bg-gray-900_03 px-[55px] pt-[55px] md:px-5 md:pt-5">
                   <div className="flex w-[95%] flex-col gap-[136px] py-16 md:w-full md:gap-[102px] md:py-5 sm:gap-[68px]">
                     <div className="flex items-start gap-[15px] md:flex-col">
-                      <Text size="11xl" as="p" className="tracking-[-2.56px] !text-white-A700">
+                      <Text
+                        size="11xl"
+                        as="p"
+                        className="tracking-[-2.56px] !text-white-A700"
+                      >
                         Inspirerend Succes
                       </Text>
                       <div className="mb-4 flex p-4">
-                        <Text size="9xl" as="p" className="mt-[5px] tracking-[-1.60px] !text-white-A700">
+                        <Text
+                          size="9xl"
+                          as="p"
+                          className="mt-[5px] tracking-[-1.60px] !text-white-A700"
+                        >
                           Innovatief, dynamisch en helder
                         </Text>
                       </div>
@@ -347,42 +456,70 @@ export default function FramePage() {
                         <div className="absolute bottom-0 left-0 right-0 top-0 m-auto flex h-max w-full items-center gap-10 border-t border-solid border-blue_gray-800 pt-[37px] md:relative md:flex-col sm:pt-5">
                           <div className="flex w-[33%] flex-col gap-[52px] pb-5 md:w-full sm:gap-[26px]">
                             <div className="flex pr-2">
-                              <Heading size="lg" as="h1" className="tracking-[-0.63px] !text-white-A700">
+                              <Heading
+                                size="lg"
+                                as="h1"
+                                className="tracking-[-0.63px] !text-white-A700"
+                              >
                                 Innovatief
                               </Heading>
                             </div>
                             <div className="pb-[21px] sm:pb-5">
-                              <Text as="p" className="leading-[21px] tracking-[-0.30px]">
-                                Innovatief denken zit in ons DNA en drijft ons agency aan. We brengen voortdurend nieuwe
-                                ideeën tot leven, waarbij we de grenzen van creativiteit en technologie verleggen
+                              <Text
+                                as="p"
+                                className="leading-[21px] tracking-[-0.30px]"
+                              >
+                                Innovatief denken zit in ons DNA en drijft ons
+                                agency aan. We brengen voortdurend nieuwe ideeën
+                                tot leven, waarbij we de grenzen van
+                                creativiteit en technologie verleggen
                               </Text>
                             </div>
                           </div>
                           <div className="flex w-[33%] flex-col justify-center gap-[52px] pb-[17px] md:w-full sm:gap-[26px]">
                             <div className="flex">
-                              <Heading size="lg" as="h2" className="tracking-[-0.63px] !text-white-A700">
+                              <Heading
+                                size="lg"
+                                as="h2"
+                                className="tracking-[-0.63px] !text-white-A700"
+                              >
                                 Dynamisch
                               </Heading>
                             </div>
                             <div className="mb-1 pr-[17px]">
-                              <Text as="p" className="leading-[21px] tracking-[-0.30px]">
-                                In een wereld die voortdurend verandert, blijft ons agency niet achter. We zijn niet
-                                alleen voorbereid op verandering, we verwelkomen het. Onze aanpak is altijd fris,
-                                vooruitstrevend en afgestemd op de toekomst.
+                              <Text
+                                as="p"
+                                className="leading-[21px] tracking-[-0.30px]"
+                              >
+                                In een wereld die voortdurend verandert, blijft
+                                ons agency niet achter. We zijn niet alleen
+                                voorbereid op verandering, we verwelkomen het.
+                                Onze aanpak is altijd fris, vooruitstrevend en
+                                afgestemd op de toekomst.
                               </Text>
                             </div>
                           </div>
                           <div className="flex self-start">
-                            <Heading size="lg" as="h3" className="tracking-[-0.63px] !text-white-A700">
+                            <Heading
+                              size="lg"
+                              as="h3"
+                              className="tracking-[-0.63px] !text-white-A700"
+                            >
                               Helder{" "}
                             </Heading>
                           </div>
                         </div>
                         <div className="absolute bottom-[0.00px] right-[-0.54px] m-auto flex w-[32%] justify-center pr-[18px]">
-                          <Text as="p" className="leading-[21px] tracking-[-0.30px]">
-                            De kern van communicatie: zorg dat je boodschap duidelijk is. Elk woord, ontwerp of stukje
-                            code moet makkelijk te begrijpen zijn. Dingen helder maken is echt een kunst en wij zijn er
-                            dol op. Of het nu gaat om een verhaal over een merk of het ontwerp van een website.
+                          <Text
+                            as="p"
+                            className="leading-[21px] tracking-[-0.30px]"
+                          >
+                            De kern van communicatie: zorg dat je boodschap
+                            duidelijk is. Elk woord, ontwerp of stukje code moet
+                            makkelijk te begrijpen zijn. Dingen helder maken is
+                            echt een kunst en wij zijn er dol op. Of het nu gaat
+                            om een verhaal over een merk of het ontwerp van een
+                            website.
                           </Text>
                         </div>
                       </div>
@@ -396,7 +533,11 @@ export default function FramePage() {
                 {/* faq section */}
                 <div className="flex flex-col items-start gap-9">
                   <div className="flex">
-                    <Text size="10xl" as="p" className="tracking-[-2.16px] !text-gray-900_03">
+                    <Text
+                      size="10xl"
+                      as="p"
+                      className="tracking-[-2.16px] !text-gray-900_03"
+                    >
                       <span className="text-gray-900_03">FAQ</span>
                       <span className="text-blue-400">.</span>
                     </Text>
@@ -416,13 +557,22 @@ export default function FramePage() {
                     >
                       Maatwerk websites{" "}
                     </Button>
-                    <Button shape="round" className="ml-2 min-w-[102px] font-medium tracking-[-0.28px] md:ml-0 sm:px-5">
+                    <Button
+                      shape="round"
+                      className="ml-2 min-w-[102px] font-medium tracking-[-0.28px] md:ml-0 sm:px-5"
+                    >
                       Branding
                     </Button>
-                    <Button shape="round" className="ml-2 min-w-[108px] font-medium tracking-[-0.28px] md:ml-0">
+                    <Button
+                      shape="round"
+                      className="ml-2 min-w-[108px] font-medium tracking-[-0.28px] md:ml-0"
+                    >
                       Marketing
                     </Button>
-                    <Button shape="round" className="ml-3 min-w-[128px] font-medium tracking-[-0.28px] md:ml-0">
+                    <Button
+                      shape="round"
+                      className="ml-3 min-w-[128px] font-medium tracking-[-0.28px] md:ml-0"
+                    >
                       Development
                     </Button>
                   </div>
@@ -444,7 +594,11 @@ export default function FramePage() {
                             className="flex flex-1 border-b border-solid border-gray-800 py-[9px]"
                           >
                             <div className="mb-[7px] flex w-full items-start justify-between gap-5 sm:flex-col">
-                              <Text size="4xl" as="p" className="mt-[5px] tracking-[-0.84px] !text-gray-900">
+                              <Text
+                                size="4xl"
+                                as="p"
+                                className="mt-[5px] tracking-[-0.84px] !text-gray-900"
+                              >
                                 {d.text}
                               </Text>
                               <Img
@@ -463,15 +617,21 @@ export default function FramePage() {
                 </div>
                 <div className="flex items-center justify-between gap-5 border-t border-solid border-blue_gray-100_01 pt-[38px] md:flex-col sm:pt-5">
                   <div className="flex">
-                    <Text size="9xl" as="p" className="tracking-[-1.60px] !text-gray-900">
+                    <Text
+                      size="9xl"
+                      as="p"
+                      className="tracking-[-1.60px] !text-gray-900"
+                    >
                       <span className="text-gray-900">About</span>
                       <span className="text-blue-400">.</span>
                     </Text>
                   </div>
                   <div className="flex self-end">
                     <Text as="p" className="tracking-[-0.30px] !text-gray-900">
-                      Grandsolution is een digital agency met strategen, ontwerpers en ontwikkelaars. Wij combineren
-                      onze expertise om verwachtingen te overtreffen en bedrijven te helpen groeien.
+                      Grandsolution is een digital agency met strategen,
+                      ontwerpers en ontwikkelaars. Wij combineren onze expertise
+                      om verwachtingen te overtreffen en bedrijven te helpen
+                      groeien.
                     </Text>
                   </div>
                 </div>
@@ -500,7 +660,11 @@ export default function FramePage() {
                 />
                 <div className="flex flex-col self-stretch">
                   <div className="flex px-1.5">
-                    <Heading size="md" as="h4" className="text-center !font-roboto !text-gray-900_02">
+                    <Heading
+                      size="md"
+                      as="h4"
+                      className="text-center !font-roboto !text-gray-900_02"
+                    >
                       Kunnen wij je ergens mee van dienst zijn?
                     </Heading>
                   </div>
@@ -516,7 +680,11 @@ export default function FramePage() {
                   </div>
                   <div className="flex self-start pt-2.5">
                     <div className="flex flex-wrap items-center px-[27px] sm:px-5">
-                      <Text size="xs" as="p" className="text-center !font-opensans !font-normal !text-gray-900_02">
+                      <Text
+                        size="xs"
+                        as="p"
+                        className="text-center !font-opensans !font-normal !text-gray-900_02"
+                      >
                         Liever bellen?{" "}
                       </Text>
                       <Heading
@@ -542,14 +710,24 @@ export default function FramePage() {
                 <div className="flex flex-col items-start px-[50px] md:px-5">
                   <div className="flex w-[37%] flex-col items-start gap-[23px] md:w-full">
                     <div className="flex py-[5px]">
-                      <Text size="7xl" as="p" className="mt-1.5 tracking-[-1.60px] !text-white-A700">
-                        <span className="text-white-A700">Let’s work&nbsp;</span>
+                      <Text
+                        size="7xl"
+                        as="p"
+                        className="mt-1.5 tracking-[-1.60px] !text-white-A700"
+                      >
+                        <span className="text-white-A700">
+                          Let’s work&nbsp;
+                        </span>
                         <span className="text-blue-400">together.</span>
                       </Text>
                     </div>
                     <div className="flex w-[85%] gap-[7px] md:w-full">
                       <div className="flex w-full justify-center rounded-[19px] border border-solid border-gray-900 bg-white-A700 p-[5px]">
-                        <Text size="s" as="p" className="mt-[9px] text-right tracking-[-0.28px] !text-black-900">
+                        <Text
+                          size="s"
+                          as="p"
+                          className="mt-[9px] text-right tracking-[-0.28px] !text-black-900"
+                        >
                           Contact
                         </Text>
                       </div>
@@ -578,13 +756,25 @@ export default function FramePage() {
                     as="p"
                     className="mt-[17px] text-center !font-normal tracking-[-0.36px] !text-white-A700"
                   >
-                    <span className="font-medium text-white-A700">© 2023&nbsp;</span>
-                    <span className="font-medium text-white-A700">Copyright Grandsolution. All rights reserved.</span>
+                    <span className="font-medium text-white-A700">
+                      © 2023&nbsp;
+                    </span>
+                    <span className="font-medium text-white-A700">
+                      Copyright Grandsolution. All rights reserved.
+                    </span>
                   </Text>
-                  <Text size="xs" as="p" className="ml-[7px] text-center tracking-[-0.36px] !text-white-A700">
+                  <Text
+                    size="xs"
+                    as="p"
+                    className="ml-[7px] text-center tracking-[-0.36px] !text-white-A700"
+                  >
                     Algemene voorwaarden
                   </Text>
-                  <Text size="xs" as="p" className="ml-5 text-center tracking-[-0.36px] !text-white-A700">
+                  <Text
+                    size="xs"
+                    as="p"
+                    className="ml-5 text-center tracking-[-0.36px] !text-white-A700"
+                  >
                     Privacy verklaring
                   </Text>
                 </div>
@@ -662,7 +852,11 @@ export default function FramePage() {
               <div className="mt-[87px] w-full">
                 <div className="flex items-center md:flex-col">
                   <div className="mt-1.5 flex w-[54%] flex-col gap-7 self-start md:w-full">
-                    <Text size="7xl" as="p" className="tracking-[-1.60px] !text-white-A700">
+                    <Text
+                      size="7xl"
+                      as="p"
+                      className="tracking-[-1.60px] !text-white-A700"
+                    >
                       <span className="text-white-A700">Let’s work&nbsp;</span>
                       <span className="text-blue-400">together.</span>
                     </Text>
@@ -795,21 +989,41 @@ export default function FramePage() {
               </div>
               <div className="relative h-[64px] w-[66%] md:h-auto">
                 <div className="flex w-full flex-wrap items-end border-t border-solid border-gray-200_01 py-[15px]">
-                  <Text size="xs" as="p" className="mt-[17px] text-center tracking-[-0.36px] !text-blue-50">
+                  <Text
+                    size="xs"
+                    as="p"
+                    className="mt-[17px] text-center tracking-[-0.36px] !text-blue-50"
+                  >
                     © 2023 Copyright Grandsolution. All rights reserved.
                   </Text>
-                  <Text size="xs" as="p" className="ml-[7px] text-center tracking-[-0.36px] !text-blue-50">
+                  <Text
+                    size="xs"
+                    as="p"
+                    className="ml-[7px] text-center tracking-[-0.36px] !text-blue-50"
+                  >
                     Algemene voorwaarden
                   </Text>
-                  <Text size="xs" as="p" className="ml-[11px] text-center tracking-[-0.36px] !text-blue-50">
+                  <Text
+                    size="xs"
+                    as="p"
+                    className="ml-[11px] text-center tracking-[-0.36px] !text-blue-50"
+                  >
                     Privacy verklaring
                   </Text>
                 </div>
                 <div className="absolute bottom-[16.07px] right-[1.58px] m-auto flex w-[20%] flex-wrap items-center justify-between gap-5">
-                  <Text size="xs" as="p" className="text-center tracking-[-0.36px] !text-blue-50">
+                  <Text
+                    size="xs"
+                    as="p"
+                    className="text-center tracking-[-0.36px] !text-blue-50"
+                  >
                     KVK: 89518160
                   </Text>
-                  <Text size="xs" as="p" className="text-center tracking-[-0.36px] !text-blue-50">
+                  <Text
+                    size="xs"
+                    as="p"
+                    className="text-center tracking-[-0.36px] !text-blue-50"
+                  >
                     BTW: 865007238B01
                   </Text>
                 </div>
