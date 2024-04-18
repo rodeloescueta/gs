@@ -1,21 +1,9 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: Inter;
+.animated-text {
+  opacity: 0;
+  transform: translateX(-100px);
 }
-* {
-  box-sizing: border-box;
-  line-height: normal;
-  font-family: inherit;
-  margin: unset;
-}
-a {
-  text-decoration: none;
-  display: block;
-}
-ul {
-  margin: 0;
-  margin-inline: unset !important;
-  padding: 0;
-  list-style: none;
+
+.animated-text.animate {
+  opacity: 1;
+  transform: translateX(0);
 }
