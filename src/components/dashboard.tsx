@@ -5,23 +5,28 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { links } from "../lib/data";
 import { motion } from "framer-motion";
+import Image from "next/image";
 // components
 import { Text, Heading, Img, Button } from ".";
+
+const BASE_URL = process.env.BASE_PATH || "/images/";
 
 export default function Dashboard() {
   return (
     <div className="flex flex-col items-center" id="dashboard">
-      <div className="mx-auto flex w-full max-w-[1827px] items-center justify-between gap-5 md:flex-col md:p-5">
-        <Img
-          src="img_6898_vector.png"
-          width={1217}
-          height={308}
-          alt="6898vector_one"
-          className="h-[308px] w-[67%] object-cover md:w-full"
-        />
-        <div className="mb-9 flex w-[24%] items-center justify-center gap-7 self-end md:w-full sm:flex-col">
-          <div className="h-full w-[2px] bg-black-900 sm:h-[2px] sm:w-full" />
-          <div className="flex flex-1 flex-col gap-[13px] sm:self-stretch">
+      <div className="grid grid-cols-4 md:grid-cols-1 gap-2">
+        <div className="col-span-3 md:col-span-4 pl-4">
+          <Image
+            src={`${BASE_URL}img_6898_vector.png`}
+            width="0"
+            height="0"
+            sizes="100vw"
+            className="w-5/6 h-auto"
+            alt="image"
+          />
+        </div>
+        <div className="col-span-1 md:col-span-4 flex">
+          <div className="flex flex-1 flex-col gap-[13px] sm:self-stretch mt-5 border-l-8">
             <div className="flex">
               <Text
                 size="3xl"

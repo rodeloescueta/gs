@@ -4,8 +4,11 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { links } from "../lib/data";
 import { motion } from "framer-motion";
+import Image from "next/image";
 // components
 import { Text, Heading, Img, Button } from "../components";
+
+const BASE_URL = process.env.BASE_PATH || "/images/";
 
 export default function Header() {
   const params = useParams();
@@ -19,15 +22,17 @@ export default function Header() {
   return (
     <header className="bg-gray-900_01">
       <div className="flex items-center justify-between gap-5 border border-solid border-blue-100_7f bg-white-A700 p-[13px] md:flex-col">
-        <Img
-          src="img_7097_rectangle.png"
-          width={232}
-          height={30}
-          alt="image"
-          className="h-[30px] w-[13%] object-cover md:w-full"
-        />
-        <div className="flex self-end p-[29px] sm:p-5">
-          <ul className="flex self-start">
+        <div className="flex-none w-54">
+          <Image
+            src={`${BASE_URL}img_7097_rectangle.png`}
+            width={232}
+            height={30}
+            alt="image"
+          />
+        </div>
+
+        <div className="flex p-[29px] sm:p-5">
+          <ul className="flex">
             {links.map((link) => {
               const isActive = link.hash === hash;
               return (
@@ -56,7 +61,7 @@ export default function Header() {
             })}
           </ul>
         </div>
-        <div className="mr-[82px] flex w-[16%] justify-between gap-5 md:mr-0 md:w-full">
+        <div className="sm:mr-[50px] flex w-[16%] justify-between gap-5 md:mr-0 md:w-full">
           <div className="flex-1 py-[5px]">
             <Link href="#dashboard">
               <Button
